@@ -27,6 +27,27 @@
 		.row{
 			width: 100%;
 		}
+		p{
+			width:100px;
+			height:30px;
+			border: 1px;
+			margin-bottom: 15px;
+		}
+		#p1{
+			background-color: red;
+			position: relative;
+			top:0px;
+		}
+		#p2{
+			background-color: red;
+			position: relative;
+			top:0px;
+		}
+		#p3{
+			background-color: red;
+			position:relative; 
+			top:0px;
+		}
 		/***********large devices only *************/
 		@media(min-width: 992px){
 			.col-ld-1,.col-ld-2,.col-ld-3,.col-ld-4,.col-ld-5,.col-ld-6,.col-ld-7,.col-ld-8,.col-ld-9,.col-ld-10,.col-ld-11,.col-ld-12{
@@ -119,9 +140,10 @@
 <body>
 <h1><center>OUR MENU</center></h1>
 <div class="row">
-	<div class="col-ld-4 col-md-6 "><p>iteam 1</p></div>
-	<div class="col-ld-4 col-md-6 "><p>item 2</p></div>
-	<div class="col-ld-4 col-md-12 "><p>item 3</p></div>
+	<div class="col-ld-4 col-md-6 ">
+		<p id="p1"></p></div>
+	<div class="col-ld-4 col-md-6 "><p id="p2"></p></div>
+	<div class="col-ld-4 col-md-12 "><p id="p3"></p></div>
 	
 </div>
 
