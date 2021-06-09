@@ -1,165 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-g">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>OUR MENU</title>
+	<meta charset="UTF-8">
+	<title>our menu</title>
 	<style>
-		/****************Base styles****************/
-		*{
-			box-sizing: border-box;
+		.container{
+			width:100%;
+			horizontal:100%;
+			background-colour:white;
+			overflow:hidden;
+			margin-right:auto;
+			margin-left:auto;
+			padding:20px 0px;
 		}
-		h1{
-			margin-bottom:15px;
+		.container ul{
+			padding:0px;
+			margin:0px;
 		}
-		p{
-			position:relative;
+		.container ul li{
+			list style:none;
+			float:left;
+			width:50%;
+			height:300px;
 			border:1px solid black;
-			background-color: grey;
-			width:90%;
-			height:150px;
-
-			margin-right: auto;
-			margin-left: auto;
-		    
-		    color: white;
-		    
+			margin:40px 40px 0px 50px;
+			box-sizing:border-box;
 		}
-		#p1{
-			position: absolute;
-			border: 1px solid black;
-			background-color: red;
-			width:30%;
-			height:30px;
-			top:0px;
-			right:0px;
-
+		.container ul li:hover{
+			opacity:0.9;
 		}
-		#p2{
-			position: absolute;
-			border: 1px solid black;
-			background-color: red;
-			width:30%;
-			height:30px;
-			top:0px;
-			right:0px;
-
-		}
-		#p3{
-			position: absolute;
-			border: 1px solid black;
-			background-color: red;
-			width:30%;
-			height:30px;
-			top:0px;
-			right:0px;
-		}
-		/*simple responsive framework*/
-		.row{
-			width: 100%;
+		
+			
 			
 		
+		.container ul li .title{
+			width:50%;
+			heigh:50px
+				line-height:50px;
+			background-colour:red;
+			text-align:center;
 		}
-	
+		@media screen and (max-width:992px){
+			.container ul li{
+				width:40%;
+				margin-left:20px;
+			}
+		}
 		
-		/***********large devices only *************/
-		@media(min-width: 992px){
-			.col-ld-1,.col-ld-2,.col-ld-3,.col-ld-4,.col-ld-5,.col-ld-6,.col-ld-7,.col-ld-8,.col-ld-9,.col-ld-10,.col-ld-11,.col-ld-12{
-				float: left;
-				border: 1px;
+		@media (min-width:768px)and (max-width:991px){
+			.container{
+				width:100%;
+				padding:0px;
 			}
-			.col-ld-1{
-				width: 8.33%;
-			}
-			.col-ld-2{
-				width: 16.66%;
-			}
-			.col-ld-3{
-				width: 25%;
-			}
-			.col-ld-4{
-				width: 33%;
-			}
-			.col-ld-5{
-				width: 41.66%;
-			}
-			.col-ld-6{
-				width: 50%;
-			}
-			.col-ld-7{
-				width: 58.33%;
-			}
-			.col-ld-8{
-				width: 66.66%;
-			}
-			.col-ld-9{
-				width: 74.99%;
-			}
-			.col-ld-10{
-				width: 83.33%;
-			}
-			.col-ld-11{
-				width: 91.66%;
-			}
-			.col-ld-12{
-				width: 100%;
+			.container ul li{
+				float:none;
+				width:90%;
+				margin:40px auto;
 			}
 		}
-	/******************medium devices only*******************/
-	@media(min-width: 768px) and (max-width: 991px){
-		.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
-			float: left;
-			border: 1px;
-		}
-		.col-md-1{
-			width: 8.33%;
-		}
-		.col-md-2{
-			width: 16.66%;
-		}
-		.col-md-3{
-			width: 25%;
-		}
-		.col-md-4{
-			width: 33%;
-		}
-		.col-md-5{
-			width: 41.66%;
-		}
-		.col-md-6{
-			width: 50%;
-		}
-		.col-md-7{
-			width: 58.33%;
-		}
-		.col-md-8{
-			width: 66.66%;
-		}
-		.col-md-9{
-			width: 74.99%;
-		}
-		.col-md-10{
-			width: 83.33%;
-		}
-		.col-md-11{
-			width: 91.66%;
-		}
-		.col-md-12{
-			width: 100%;
-		}
-	}
-	
-</style>
+		
+			
+		
+		
+	</style>			
+		
 </head>
 <body>
-<h1><center>OUR MENU</center></h1>
-<div class="row">
-	
-	<div class="col-ld-4 col-md-6 "><p id="p1">/"lorem ipsum"</p></div>
-	<div class="col-ld-4 col-md-6 "><p id="p2">/"lorem ipsum"</p></div>
-	<div class="col-ld-4 col-md-12 "><p id="p3">/"lorem ipsum"></p></div>
-	
-</div>
-
+	<h1><center>our menu</center></h1>
+	<div class="container">
+		<ul>
+			<li><div class="title">chicken</div></li>
+			<li><div class="title">beef</div></li>
+			<li><div class="title">sushi</div></li>
+		</ul>
 </body>
 </html>
