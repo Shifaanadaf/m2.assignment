@@ -1,75 +1,164 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-g">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>OUR MENU</title>
 	<style>
-	.container{
-		width:100%;
-		overflow: hidden;
-		background: white;
-		margin:20px auto;
-		padding:20px 0px;
+		/****************Base styles****************/
+		*{
+			box-sizing: border-box;
 		}
-		.container ul{
-			padding: 0px;
-			margin:0px;
-			}
-			.container ul li{
-				float:left;
-				width:20%;
-				height:300px;
-				background:grey;
-				margin:40px 30px 0px 40px;
-				box-sizing:border-box;
-				border:2px solid black;
-				}
-				.container ul li .title{
-					width: 50%;
-					float: right;
-					height:50px;
-					line-height: 50px;
-					background: red;
-					text-align: center;
+		h1{
+			margin-bottom:15px;
+		}
+		p{
+			
+			border:1px solid black;
+			background-color: grey;
+			width:90%;
+			height:150px;
 
-					}	/****************Base styles****************/
+			margin-right: auto;
+			margin-left: auto;
+		    
+		    
+		}
 		
 		/*simple responsive framework*/
-		@media screen and (max-width: 992px){
-			.container ul li{
-				width:40%;
-				margin: 50px;
+		.row{
+			width: 100%;
+			
+		
+		}
+		
+		 p.title{
+			width:50%;
+			height:30px;
+			float:right;
+			text-align:center;
+		}
+
+		#title1{
+			color:pink;
+		}
+		#title2{
+			color:red;
+		}
+		#title3{
+			color:yellow;
+		}
+	
+		
+		/***********large devices only *************/
+		@media(min-width: 992px){
+			.col-ld-1,.col-ld-2,.col-ld-3,.col-ld-4,.col-ld-5,.col-ld-6,.col-ld-7,.col-ld-8,.col-ld-9,.col-ld-10,.col-ld-11,.col-ld-12{
+				float: left;
+				border: 1px;
+			}
+			.col-ld-1{
+				width: 8.33%;
+			}
+			.col-ld-2{
+				width: 16.66%;
+			}
+			.col-ld-3{
+				width: 25%;
+			}
+			.col-ld-4{
+				width: 33%;
+			}
+			.col-ld-5{
+				width: 41.66%;
+			}
+			.col-ld-6{
+				width: 50%;
+			}
+			.col-ld-7{
+				width: 58.33%;
+			}
+			.col-ld-8{
+				width: 66.66%;
+			}
+			.col-ld-9{
+				width: 74.99%;
+			}
+			.col-ld-10{
+				width: 83.33%;
+			}
+			.col-ld-11{
+				width: 91.66%;
+			}
+			.col-ld-12{
+				width: 100%;
 			}
 		}
-		@media screen and (max-width: 750px)
-		{
-			.container {
-				width: 100%;
-				padding:0px;
-
-			}
-			
-	      .container ul li{
-	      	float:none;
-	      	width: 90%;
-	      	margin:40px auto;
-	      }
+	/******************medium devices only*******************/
+	@media(min-width: 768px) and (max-width: 991px){
+		.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+			float: left;
+			border: 1px;
+		}
+		.col-md-1{
+			width: 8.33%;
+		}
+		.col-md-2{
+			width: 16.66%;
+		}
+		.col-md-3{
+			width: 25%;
+		}
+		.col-md-4{
+			width: 33%;
+		}
+		.col-md-5{
+			width: 41.66%;
+		}
+		.col-md-6{
+			width: 50%;
+		}
+		.col-md-7{
+			width: 58.33%;
+		}
+		.col-md-8{
+			width: 66.66%;
+		}
+		.col-md-9{
+			width: 74.99%;
+		}
+		.col-md-10{
+			width: 83.33%;
+		}
+		.col-md-11{
+			width: 91.66%;
+		}
+		.col-md-12{
+			width: 100%;
+		}
 	}
-		
-		
 	
 </style>
 </head>
 <body>
 <h1><center>OUR MENU</center></h1>
-<div class="container">
-	<ul>
-		<li> <div class="title">chicken</div> </li>
-		<li> <div class="title">beef</div> </li>
-        <li> <div class="title">sushi</div> </li>	
-	</ul>
+<div class="row">
 	
+	<div class="col-ld-4 col-md-6 ">
+		<p class="title">
+			<div id="title1">chicken</div>
+		</p>
+	</div>
+		 
+	<div class="col-ld-4 col-md-6 ">
+		<p class="title">
+			<div id="title2">beef</div>
+		</p>
+	</div>
+	<div class="col-ld-4 col-md-12 ">
+		<p class="title">
+			<div id="title3">sushi</div>
+		</p>
+	</div>
 	
 </div>
 
