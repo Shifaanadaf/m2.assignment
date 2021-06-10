@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-g">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,7 +19,7 @@
 			.container ul li{
 				float:left;
 				width:20%;
-				height:150px;
+				height:300px;
 				background:grey;
 				margin:40px 30px 0px 40px;
 				box-sizing:border-box;
@@ -36,15 +36,15 @@
 					}	/****************Base styles****************/
 		
 		/*simple responsive framework*/
-		@media (min-width: 992px){
+		@media screen and (max-width: 992px){
 			.container ul li{
 				width:40%;
-				margin: 20px;
+				margin: 50px;
 			}
 		}
-		@media (min-width: 750px) and (max-width: 991px)
+		@media screen and (max-width: 750px)
 		{
-			.container ul li{
+			.container {
 				width: 100%;
 				padding:0px;
 
@@ -65,9 +65,9 @@
 <h1><center>OUR MENU</center></h1>
 <div class="container">
 	<ul>
-		<li><div class="title">chicken</div></li>
-		<li><div class="title">beef</div></li>
-        <li><div class="title">sushi</div></li>	
+		<li> <div class="title">chicken</div> </li>
+		<li> <div class="title">beef</div> </li>
+        <li> <div class="title">sushi</div> </li>	
 	</ul>
 	
 	
