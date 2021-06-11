@@ -5,49 +5,43 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>OUR MENU</title>
 	<style>
+		/****************Base styles****************/
 		*{
 			box-sizing: border-box;
 		}
 		h1{
-			margin-bottom: 15px;
+			margin-bottom:15px;
 		}
-	.container{
-		width:100%;
-		
-		}
-		.container ul{
-			padding: 0px;
-			margin:0px;
-			}
-			.container ul li{
-				border:1px solid black;
+		p{
+			
+			border:1px solid black;
 			background-color: grey;
 			width:90%;
 			height:150px;
 
 			margin-right: auto;
 			margin-left: auto;
-				
-				}
-				.container ul li .title{
-					width: 50%;
-					float: right;
-					height:50px;
-					line-height: 50px;
-					background: red;
-					text-align: center;
-					position: relative;
-
-					}	/****************Base styles****************/
+		    
+		    color: white;
+		    
+		}
 		
 		/*simple responsive framework*/
-		@media (min-width: 992px){
+		.row{
+			width: 100%;
+			
+		
+		}
+	
+		
+		/***********large devices only *************/
+		@media(min-width: 992px){
 			.col-ld-1,.col-ld-2,.col-ld-3,.col-ld-4,.col-ld-5,.col-ld-6,.col-ld-7,.col-ld-8,.col-ld-9,.col-ld-10,.col-ld-11,.col-ld-12{
-				float:left;
-				border:1px;
+				float: left;
+				border: 1px;
 			}
 			.col-ld-1{
-				width:8.33%;
+				width: 8.33%;
 			}
 			.col-ld-2{
 				width: 16.66%;
@@ -82,12 +76,10 @@
 			.col-ld-12{
 				width: 100%;
 			}
-
-			
 		}
-		@media (min-width: 768px) and (max-width: 991px)
-		{
-			.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+	/******************medium devices only*******************/
+	@media(min-width: 768px) and (max-width: 991px){
+		.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
 			float: left;
 			border: 1px;
 		}
@@ -127,29 +119,17 @@
 		.col-md-12{
 			width: 100%;
 		}
-			
 	}
-		
-		
 	
 </style>
 </head>
 <body>
 <h1><center>OUR MENU</center></h1>
-<div class="container">
-	<ul>
-		<li><div class="col-ld-4 col-md-6">
-			<div class="title">chicken</div>
-		</div></li>
-		<li><div class="col-ld-4 col-md-6">
-			<div class="title">beef</div>
-		</div></li>
-        <li>
-        	<div class="col-ld-4 col-md-12">
-        		<div class="title">sushi</div>
-        	</div></li>	
-	</ul>
+<div class="row">
 	
+	<div class="col-ld-4 col-md-6 "><p>/"lorem ipsum"</p></div>
+	<div class="col-ld-4 col-md-6 "><p>/"lorem ipsum"</p></div>
+	<div class="col-ld-4 col-md-12 "><p>/"lorem ipsum"></p></div>
 	
 </div>
 
